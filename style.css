@@ -1,0 +1,268 @@
+:root {
+    --progress-buttons-check-color: #2b3e2c;
+    --progress-buttons-check-active-color: #448460;
+    --progress-buttons-check-active-bg-color: #64964d11;
+    --progress-buttons-repeat-color: #443322;
+    --progress-buttons-repeat-active-color: #c6964e;
+    --progress-buttons-repeat-active-bg-color: #da902119;
+    --progress-buttons-uncheck-color: #e3796a;
+    --progress-buttons-uncheck-bg-color: #e3786a19;
+    --progress-buttons-transition: 0.15s;
+}
+
+.progress-buttons-wrapper {
+    display: flex;
+}
+
+.progress-button {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    margin: 40px 0;
+    transition: var(--progress-buttons-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #343746;
+}
+
+.progress-button-svg-icon {
+    width: 30px;
+}
+
+.progress-button-svg-icon path {
+    transition: var(--progress-buttons-transition);
+    fill: #343746;
+}
+
+
+
+.complete-page-button {
+    margin-right: 20px;
+    width: 200%;
+}
+
+.progress-button-light {
+    border-color: #e7e5e3;
+}
+
+.progress-button-light .progress-button-svg-icon path {
+    fill: #e7e5e3;
+}
+
+.complete-page-button:hover {
+    background-color: var(--progress-buttons-check-active-bg-color);
+    border-color: var(--progress-buttons-check-active-color);
+}
+
+.completed {
+    background-color: var(--progress-buttons-check-active-bg-color);
+    border-color: var(--progress-buttons-check-active-color);
+    color: var(--progress-buttons-check-active-color);
+}
+
+.completed:hover {
+    background-color: var(--progress-buttons-uncheck-bg-color);
+    border-color: var(--progress-buttons-uncheck-color);
+}
+
+.completed .check-svg-icon path {
+    fill: var(--progress-buttons-check-active-color);
+}
+
+.complete-page-button:hover .check-svg-icon path {
+    fill: var(--progress-buttons-check-active-color);
+}
+
+.completed:hover .check-svg-icon path {
+    fill: var(--progress-buttons-uncheck-color);
+}
+
+.repeat-page-button:hover {
+    background-color: var(--progress-buttons-repeat-active-bg-color);
+    border-color: var(--progress-buttons-repeat-active-color);
+}
+
+.repeat-page-button:hover .repeat-svg-icon path {
+    fill: var(--progress-buttons-repeat-active-color);
+}
+
+.repeated {
+    background-color: var(--progress-buttons-repeat-active-bg-color);
+    border-color: var(--progress-buttons-repeat-active-color);
+    color: var(--progress-buttons-repeat-active-color);
+}
+
+.repeated .repeat-svg-icon path {
+    fill: var(--progress-buttons-repeat-active-color);
+}
+
+.repeated:hover {
+    background-color: var(--progress-buttons-uncheck-bg-color);
+    border-color: var(--progress-buttons-uncheck-color);
+}
+
+.repeated:hover .repeat-svg-icon path {
+    fill: var(--progress-buttons-uncheck-color);
+}
+
+.link-completed {
+    color: var(--progress-buttons-check-active-color) !important;
+}
+
+.link-completed:hover {
+    color: #71d99e !important;
+}
+
+.link-repeated {
+    color: var(--progress-buttons-repeat-active-color) !important;
+}
+
+.link-repeated:hover {
+    color: #f6c06e !important;
+}
+
+.progress-counter {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.hide-curse-btn {
+    cursor: pointer;
+    margin-top: 20px;
+    color: #868d9a;
+    font-size: 14px;
+    border: none;
+    background: none;
+    display: inline-block;
+    transition: var(--progress-buttons-transition);
+}
+
+.hide-curse-btn:hover {
+    color: var(--progress-buttons-uncheck-color);
+}
+
+.active.active-completed {
+    color: var(--progress-buttons-check-active-color) !important;
+    border-color: var(--progress-buttons-check-active-color) !important;
+}
+
+.hover-completed:hover {
+    color: var(--progress-buttons-check-active-color) !important;
+}
+
+.user-progress-block {
+    max-width: 984px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.user-progress-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.user-progress-percents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #868d9a;
+}
+
+.user-progress-percents-percent {
+    margin: 0 auto;
+}
+
+.user-progress-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.user-progress-progressbar {
+    height: 5px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    background-color: #35383f;
+}
+
+.progressbar-light {
+    background-color: #e9e6e4;
+}
+
+.user-progress-progressbar-completed {
+    height: 5px;
+    width: 40%;
+    background-color: var(--progress-buttons-check-active-color);
+}
+
+.user-progress-progressbar-repeated {
+    height: 5px;
+    width: 25%;
+    background-color: var(--progress-buttons-repeat-active-color);
+}
+
+.frontpage-content .tabs__menu {
+    top: -1px !important;
+}
+
+.learn-progress-info-wrapper {
+    margin: auto 0;
+}
+.learn-progress-info-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #383c42;
+    border-radius: 100px;
+    margin: auto 20px auto 0;
+    border: 2px solid #696e79;
+    cursor: pointer;
+    transition: 0.15s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.ibb.co/b6Jv1Nk/128px-learn-js-tracker-new-icon.png');
+}
+
+.learn-progress-info-button:hover {
+    border-color: #b3bbcd;
+}
+
+.info-button-blob {
+    background: white;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    transform: scale(1);
+    animation: pulse-white 2s infinite;
+
+    position: absolute;
+    border-radius: 500px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@keyframes pulse-white {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}

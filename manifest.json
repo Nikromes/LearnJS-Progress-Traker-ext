@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "LearnJS Progress Tracker",
+    "description": "Track your progress in learning JavaScript",
+    "version": "1.2",
+    "icons": {
+        "128": "images/128px-learn-js-tracker-icon.png"
+    },
+    "action": {
+        "default_icon": {
+            "128": "images/128px-learn-js-tracker-icon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://learn.javascript.ru/*" ],
+            "js": [ "app.js" ],
+            "css": ["style.css"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
